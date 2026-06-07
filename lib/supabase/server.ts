@@ -20,4 +20,4 @@ export async function createClient() {
       },
     }
   )
-}import { createServerClient } from '@supabase/ssr' 
+}
