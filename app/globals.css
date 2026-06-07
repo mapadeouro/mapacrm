@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap');
+
+:root {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-mono: 'Barlow Condensed', sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #111318;
+  color: #E5E7EB;
+  font-family: var(--font-sans);
+  /* Evita bounce scroll no iOS */
+  overscroll-behavior: none;
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar       { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2A2D35; border-radius: 2px; }
+
+/* Bottom nav safe area no iPhone */
+.bottom-nav {
+  padding-bottom: env(safe-area-inset-bottom);
+}
